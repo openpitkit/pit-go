@@ -13,18 +13,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-// Please see https://github.com/openpitkit and the OWNERS file for details.
+// Please see https://openpit.dev and the OWNERS file for details.
 
-package marketdata
+package openpit
 
 import (
 	"go.openpit.dev/openpit/internal/core"
 	"go.openpit.dev/openpit/internal/native"
 )
 
-// InstrumentID is the core OpenPit instrument identity.
-//
-// It remains available from marketdata for source compatibility.
+// InstrumentID identifies an instrument across OpenPit subsystems.
 type InstrumentID = core.InstrumentID
 
 // NewInstrumentIDFromUint64 constructs an instrument identifier from a uint64
